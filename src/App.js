@@ -11,6 +11,25 @@ import AboutJSX from './components/advanced/aboutJSX.js'
 
 import PropType from './components/advanced/proptype.js'
 
+import RefsAndDom from './components/advanced/refsAndDom.js'
+
+import UnController from './components/advanced/uncontrolled-components.js'
+
+// react-router
+import BasicRouter from './router/basic.jsx'
+import UrlParamsRouter from './router/urlParams.jsx'
+import Auth from './router/auth.jsx'
+import CustomLink from './router/customLink.jsx'
+import PreventingTransitions from './router/preventingTransitions.jsx'
+import NoMatch from './router/nomatch.js'
+import Recursive from './router/recursivePaths.js'
+import Sidebar from './router/sidebar.js'
+import Ambiguous from './router/ambiguous.js'
+import AnimatedTransitions from './router/animatedTransitions.js' // css插件使用不了
+import StaticRouter from './router/staticRouter.jsx' // ? 服务器端渲染
+import ModalGallery from './router/modalGallery.js'
+
+
 const com = {
 	AboutJSX: AboutJSX,
 	PropType: PropType
@@ -43,6 +62,8 @@ export class App extends React.Component {
 				<Main type={this.state.currentMain}/>
 				<ReactEx />
 				<Com name={1}/>
+				<RefsAndDom />
+				<UnController />
 			</div>
 		);
 	}
