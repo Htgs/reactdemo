@@ -28,7 +28,7 @@ import Ambiguous from './router/ambiguous.js'
 import AnimatedTransitions from './router/animatedTransitions.js' // css插件使用不了
 import StaticRouter from './router/staticRouter.jsx' // ? 服务器端渲染
 import ModalGallery from './router/modalGallery.js'
-
+import ConfigRoutre from './router/routeConfig.js'
 
 const com = {
 	AboutJSX: AboutJSX,
@@ -64,6 +64,7 @@ export class App extends React.Component {
 				<Com name={1}/>
 				<RefsAndDom />
 				<UnController />
+				<ConfigRoutre />
 			</div>
 		);
 	}
